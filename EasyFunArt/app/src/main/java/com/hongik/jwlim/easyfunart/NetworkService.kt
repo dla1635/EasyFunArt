@@ -2,9 +2,8 @@ package com.hongik.jwlim.easyfunart
 
 
 import com.hongik.jwlim.easyfunart.GET.RecordResponse
-import com.hongik.jwlim.easyfunart.Response.TrackListResponse
 import retrofit2.Call
-import retrofit2.http.*
+import retrofit2.http.GET
 
 /**
  * Created by JWLIM on 2017-12-31.
@@ -17,7 +16,6 @@ interface NetworkService {
     @GET("")
     fun getPrevRecord(): Call<RecordResponse>
 
-    @GET("")
-    fun getTrackList():Call<TrackListResponse>
 
 }
+
