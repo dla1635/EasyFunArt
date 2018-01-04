@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# 관련 해시 태그(더미 데이터)"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginLeft="21dp"
+        android:id="@+id/main_title_text"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+    <TextView
+        android:layout_marginLeft="21dp"
+        android:id="@+id/intro_title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/main_title_text"
+        android:layout_height="wrap_content"
+        android:text="전시 소개"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/intro_context"
+            android:layout_width="310.08dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/intro_title"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="20dp"
+            android:text="빛이 만들어 낸 그림자까지 작품의 일부로 여기는 타히티 퍼슨은 섬세하게 커팅된 흰 종이를 투과하며 햇살처럼 쏟아져 들어오는 빛과 그림자의 대비를 통해 가벼움과 무거움을 동시에 보여주며 공간의 균형을 도모합니다.국립현대미술관은 현대영화사에있어 독보적인 작품세계를 구현한 중요감독들의 작품을 전시로 재구성해 소개하는 프로젝트의 일환으로 필립 가렐,찬란한 절이 밤 그날의 반딧불을 당신의 창 가까이 보낼게요 빛이 들어오면 자연스레 뜨던 눈 그렇게 너의 눈빛을 보곤 사랑에 눈을 떴어 항상 알고 있던 것들도 어딘가 새롭게 바뀐 것 같아 남의 얘기 같던 설레는 일들이 내게 일어나고 있어 나에게만 준비된 선물 같아 자그마한 모든 게 커져만 가 항상 평범했던 일상도 특별해지는 이 순간 별생각 없이 지나치던 것들이 이제는 마냥"
+            android:textSize="14dp" />
+
+        <TextView
+        android:layout_marginLeft="21dp"
+        android:id="@+id/intro_artist"
+        android:layout_width="match_parent"
+        android:layout_marginTop="19.48dp"
+        android:layout_below="@+id/intro_context" android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="작가 소개"
+        android:textSize="16dp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_below="@+id/intro_artist"
+            android:layout_width="70.08dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="70.08dp"
+            android:layout_marginLeft="20.26dp"
+            android:src="@raw/jwh"
+            />
+        <TextView
+            android:id="@+id/intro_artist2"
+            android:layout_width="223.68dp"
+            android:layout_height="61.44dp"
+            android:layout_toRightOf="@+id/profile"
+            android:layout_below="@+id/intro_artist"
+            android:layout_marginTop="8dp"
+            android:text="정원희는 1991년 서울에서 태어나 뉴욕에 거주하고 있다. 그는 여화적 매체의 변화를 읽고"
+            android:textSize="14dp" />
+
+   </RelativeLayout>
+</ScrollView>

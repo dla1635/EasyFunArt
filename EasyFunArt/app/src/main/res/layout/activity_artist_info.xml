@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가자"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FCDC09"
+        android:text="작가정보"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        />
+    <ImageView
+        android:id="@+id/artist_img"
+        android:layout_marginTop="89dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:src="@raw/jwh"/>
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/artist_img"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/artist_content"
+        android:layout_width="320dp"
+        android:layout_height="157dp"
+        android:layout_below="@+id/artist_name"
+        android:text="안드로이드 개발자 정원희의 테스트용 더미 데이터 입니다."
+        android:textSize="14pt"
+        android:layout_marginLeft="33dp"
+        />
+        <TextView
+            android:id="@+id/artist_portfolio"
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/artist_content"
+            android:text="전시 포트폴리오"
+            android:textSize="15dp"
+            android:layout_marginLeft="33dp"
+            />
+        <ImageView
+            android:id="@+id/artist_portfolio_list"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/artist_portfolio"
+            android:src="@raw/jwh"
+            />
+        <ImageView
+            android:id="@+id/artist_portfolio_list2"
+            android:layout_width="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/artist_portfolio"
+            android:layout_toRightOf="@+id/artist_portfolio_list"
+            android:src="@raw/jwh"
+            />
+
+
+
+    </RelativeLayout>
+</ScrollView>
