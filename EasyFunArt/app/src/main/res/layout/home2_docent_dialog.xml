@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="241.35dp"
+    android:layout_height="343.68dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.5dp"
+        android:text="AUDIO GUIDE"
+        android:textColor="#1f1f1f"
+        android:id="@+id/dialog_docent_topText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:id="@+id/dialog_docent_xButton"
+        android:layout_marginRight="11.5dp"
+        android:layout_marginTop="14.5dp"
+        android:layout_alignParentRight="true"/>
+    
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="208dp"
+        android:src="@drawable/test"
+        android:id="@+id/dialog_docent_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_docent_title"
+        android:text="여기는 제목이다"
+        android:layout_below="@+id/dialog_docent_image"
+        android:textColor="#2d2d2d"
+        android:layout_marginLeft="17dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_docent_place"
+        android:layout_marginLeft="17dp"
+        android:text="여기는 장소이다"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/dialog_docent_title"
+        android:textColor="#828282"
+        android:layout_marginBottom="30dp"
+        android:textSize="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#828282"
+        android:layout_above="@+id/dialog_docent_detailButton"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#ffffff"
+        android:id="@+id/dialog_docent_detailButton"
+        android:text="전시 자세히 보기"
+        android:textColor="#414141"
+        android:layout_below="@id/dialog_docent_place"
+        android:textSize="13dp"/>
+
+</RelativeLayout>

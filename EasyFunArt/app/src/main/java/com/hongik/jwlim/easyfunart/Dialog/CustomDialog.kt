@@ -25,7 +25,5 @@ class CustomDialog(context:Context):Dialog(context) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.custom_dialog)
-
     }
-
 }

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Activity.RecommendActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#fcdc09">
+
+        <ImageButton
+            android:id="@+id/recomend_backButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="맞춤 추천"
+            android:background="#fcdc09"
+            android:textColor="#252525"
+            android:textSize="18dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabbar"
+        android:id="@+id/recomend_recyclerView"
+        android:layout_below="@id/toolbar">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/tabbar"
+        android:layout_height="49dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/docent_tabbar">
+
+                <ImageView
+                    android:layout_marginTop="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tapbar_docent_off"
+                    android:id="@+id/tabbar_docent_button"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tabbar_docent_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="도슨트"
+                    android:layout_marginTop="5.48dp"
+                    android:textSize="9dp"
+                    android:textColor="@color/color414141"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="27dp"
+                android:layout_toLeftOf="@+id/docent_tabbar"
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/recommend_tabbar">
+
+                <ImageView
+                    android:layout_marginTop="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tapbar_recommend_on"
+                    android:id="@+id/tabbar_recommend_button"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tabbar_recommend_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="추천"
+                    android:layout_marginTop="5.48dp"
+                    android:textSize="9dp"
+                    android:textColor="@color/color414141"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_toLeftOf="@+id/recommend_tabbar"
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_marginTop="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tapbar_home_off"
+                    android:id="@+id/tabbar_home_button"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tabbar_home_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="홈"
+                    android:layout_marginTop="5.48dp"
+                    android:textSize="9dp"
+                    android:textColor="@color/color414141"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="27dp"
+                android:layout_toRightOf="@+id/docent_tabbar"
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/search_tabbar">
+
+                <ImageView
+                    android:layout_marginTop="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tapbar_search_off"
+                    android:id="@+id/tabbar_search_button"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tabbar_search_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="검색"
+                    android:layout_marginTop="5.48dp"
+                    android:textSize="9dp"
+                    android:textColor="@color/color414141"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/search_tabbar"
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_marginTop="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tapbar_mypage_off"
+                    android:id="@+id/tabbar_mypage_button"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tabbar_mypage_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="홈"
+                    android:layout_marginTop="5.48dp"
+                    android:textSize="9dp"
+                    android:textColor="@color/color414141"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

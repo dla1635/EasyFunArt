@@ -39,7 +39,6 @@ class TrackListAdapter(var trackData: ArrayList<TrackData>) : RecyclerView.Adapt
             val v = LayoutInflater.from(parent!!.context).inflate(R.layout.floor_list, parent, false)
             v.setOnClickListener(onItemClick)
             return FloorViewHolder(v)
-
         }
         else{
             val v = LayoutInflater.from(parent!!.context).inflate(R.layout.tracklist_item, parent, false)

@@ -1,7 +1,6 @@
 package com.hongik.jwlim.easyfunart.Activity
 
 import android.content.Intent
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager

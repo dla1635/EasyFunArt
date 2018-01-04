@@ -5,106 +5,191 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.hongik.jwlim.easyfunart.Activity.PlaybackScreen"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="400dp"
+        >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="요나스 해커스"
-            android:textSize="20dp"
-            android:layout_centerInParent="true"
-            android:id="@+id/playbackScreen_galleryname_text"
-            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/playbackScreen_actionbar"
+            >
 
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="요나스 해커스;찰나,힐긋"
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_centerInParent="true"
+                android:id="@+id/playbackScreen_galleryname_text"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/docentplaying_cancel"
+                android:layout_marginLeft="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/playbackScreen_cancel_btn"
+                />
+
+
+
+        </RelativeLayout>
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginLeft="100dp"
-            android:layout_alignParentRight="true"
-            />
-
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="250dp">
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_gravity="center_horizontal"
             android:src="@mipmap/ic_launcher_round"
             android:id="@+id/playbackScreen_work_img"
-            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/playbackScreen_actionbar"
+
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01-Welcome"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:id="@+id/playbackScreen_workname_text"
+            android:layout_below="@+id/playbackScreen_work_img"
+            android:layout_marginTop="25dp"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="vertical"
-            android:gravity="center_vertical"
-            android:id="@+id/playbackScreen_script_layout">
+            android:layout_height="400dp"
+            android:id="@+id/playbackScreen_layout_view"
+            android:layout_marginTop="50dp"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/playbackScreen_scroll_view"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/playbackScreen_script_layout"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/playbackScreen_scriptGallery_text"
+                        android:textColor="#ffffff"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/playbackScreen_title_text"
+                        android:textColor="#ffffff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/playbackScreen_content_text"
+                        android:textColor="#ffffff"
+                        android:lineSpacingMultiplier="1.3"
+                        />
+
+                </LinearLayout>
+
+
+            </ScrollView>
 
         </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical"
+                android:id="@+id/playbackScreen_map_layout"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/playbackScreen_workname_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/playbackScreen_map_img"
+                    />
+
+
+
+            </LinearLayout>
+
     </RelativeLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="김동률-감사"
-        android:layout_gravity="center_horizontal"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/playbackScreen_workname_text"/>
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:gravity="center">
 
         <Button
             android:id="@+id/playbackScreen_prev_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="19.22dp"
+            android:layout_height="23dp"
             android:layout_centerInParent="true"
-            android:text="왼쪽"
+            android:background="@drawable/docentplaying_before"
             />
+
         <Button
             android:id="@+id/playbackScreen_playPause_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30.72dp"
+            android:layout_height="56.73dp"
             android:layout_centerInParent="true"
-            android:text="플레이/일시중지"
+            android:background="@drawable/docentplaying_stop"
+            android:layout_marginLeft="62.7dp"
+            android:layout_marginRight="62.7dp"
 
             />
-
         <Button
             android:id="@+id/playbackScreen_next_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="19.22dp"
+            android:layout_height="23dp"
             android:layout_centerInParent="true"
-            android:text="오른쪽"
+            android:background="@drawable/docentplaying_next"
 
             />
-        <Button
-        android:id="@+id/wh_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="원희꺼"
-
-        />
 
     </LinearLayout>
+
+
+
 
     <SeekBar
         android:id="@+id/seekBar1"
@@ -112,25 +197,36 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button4"
         android:layout_below="@+id/button4"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"/>
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
+            android:layout_width="30dp"
+            android:layout_height="33dp"
+            android:src="@drawable/docentplaying_script"
             android:layout_alignParentLeft="true"
             android:id="@+id/playbackScreen_script_button"
             />
+        
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:src="@drawable/docentplaying_bottomplaylist"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="33dp"
+            android:src="@drawable/docentplaying_place"
             android:layout_alignParentRight="true"
             android:id="@+id/playbackScreen_map_button"
             />
