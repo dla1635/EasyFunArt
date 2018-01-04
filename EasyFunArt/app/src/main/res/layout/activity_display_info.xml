@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hongik.jwlim.easyfunart.Activity.DisplayInfoActivity">
+
+
+    <Button
+        android:id="@+id/back_button"
+       android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detailpg_backbutton" />
+    <Button
+        android:id="@+id/share_button"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="20.65dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="13dp"
+        android:background="@drawable/detailpg_share" />
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="27.6dp"
+        android:layout_height="24dp"
+        android:layout_toLeftOf="@+id/share_button"
+        android:id="@+id/heart"
+        android:background="@drawable/detailpg_heart_on"
+
+        />
+
+    <ImageView
+        android:id="@+id/back_ground"
+        android:layout_width="match_parent"
+        android:layout_height="188.72dp"
+        android:background="@raw/jwh"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="188dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="113.84dp"
+        android:text="요나스 메카스 : 찰나,힐긋,돌아보다"
+        android:textSize="23dp"
+        android:fontFeatureSettings="NanumSquare"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="200dp"
+        android:text="2017.09.14 ~ 2018.03.04"
+        />
+    <TextView
+        android:id="@+id/place"
+        android:layout_marginLeft="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:text="국립현대미술관 서울관"
+        />
+    <ImageView
+        android:id="@+id/display_score"
+        android:layout_toRightOf="@+id/date"
+        android:layout_below="@+id/back_ground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/detailpg_allstar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 평점"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="195dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.2"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="220dp"
+        />
+    <ImageView
+        android:id="@+id/display_score2"
+        android:layout_toRightOf="@+id/display_score"
+        android:layout_below="@+id/back_ground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/detailpg_allstar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="평균 평점"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="195dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="220dp"
+        android:text="4.5"/>
+
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/display_score"
+        android:onClick="tabClick"
+        android:background= "#FFFFFF"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_frame"
+        android:layout_below="@+id/main_tab"
+        android:layout_above="@+id/star"
+    >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/star"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="@drawable/detailpg_reviewcheckbutton"
+
+
+        >
+    </Button>
+    <Button
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/star"
+        android:background="@drawable/detailpg_audioguide"
+        >
+    </Button>
+
+    </RelativeLayout>

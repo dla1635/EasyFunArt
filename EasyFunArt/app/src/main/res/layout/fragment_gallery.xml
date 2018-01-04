@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간   "
+        android:textSize="15dp"
+    />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:00~17:00"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/a"
+        />
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주소   "
+        android:textSize="15dp"
+        android:layout_below="@+id/date"
+       />
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서울특별시 종로구 소격동 165"
+        android:layout_below="@+id/date"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/b"
+        />
+    <TextView
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="번호   "
+        android:textSize="15dp"
+        android:layout_below="@+id/hour"
+        />
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02) 6264-1966"
+        android:layout_below="@+id/b"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/c"
+        />
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="16.39dp"
+        android:layout_marginRight="14.91dp"
+        android:layout_marginTop="26.49dp"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_below="@+id/place"
+        />
+
+    </RelativeLayout>
+</ScrollView>
