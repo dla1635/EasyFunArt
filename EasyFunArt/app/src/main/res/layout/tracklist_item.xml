@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#708090"
+        android:layout_weight="2"
+        android:text=""
+        android:id="@+id/trackList_number"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="8"
+        android:id="@+id/trackList_title"
+        android:textColor="#000000"
+
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="2"
+        android:src="@drawable/btn_docent_play"
+        android:id="@+id/trackList_button"
+        />
+
+</LinearLayout>
